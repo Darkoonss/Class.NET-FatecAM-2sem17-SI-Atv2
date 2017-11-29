@@ -1,11 +1,23 @@
-ï»¿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <title></title>
-   <!-- LIGAÃ‡ÃƒO COM CSS-->
+   <title> Security Company</title>
+
+       <!-- Inicial Bootstrap -->
+      <link rel="stylesheet" href="common/bootstrap/css/bootstrap-theme.css" />
+      <link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="common/bootstrap/css/bootstrap.css" />
+    <!-- End Bootstrap -->
+
+    <!-- Inicial Font-Awesome -->
+      <link rel="stylesheet" href="common/font-awesome/css/font-awesome.css" />
+      <link rel="stylesheet" href="common/font-awesome/css/font-awesome.min.css" />
+    <!-- End Font-Awesome -->
+
+   <!-- LIGAÇÃO COM CSS-->
    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
 
    <!-- REF: http://flexslider.woothemes.com/ -->
@@ -19,22 +31,25 @@
 </head>
 <body>
    <form id="form1" runat="server">
-      <!-- CABEÃ‡ALHO-->
+         <div class="container" style="padding:15px">
+              <!-- CABEÇALHO-->
       <div class="cabecalho">
          <!-- LOGOMARCA-->
-         <div class="logomarca">
-            <asp:Image ID="Image1" ImageUrl="~/Images/marca.png" runat="server" />
-         </div>
+         <a href="/" style=" text-decoration:none ">
+            <h3 class="text-muted" style="font-family: 'Comic Sans MS'"><img src="common/images/marca.png"/> Security Company</h3>
+          </a>
          <!-- MENU-->
          <div class="menu">
 
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">HOME</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" Visible="true" runat="server" NavigateUrl="~/Default.aspx">HOME</asp:HyperLink>
 
-            <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Sobre.aspx" runat="server">SOBRE</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" Visible="true" NavigateUrl="~/Sobre.aspx" runat="server">SOBRE</asp:HyperLink>
 
-            <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Cadastro.aspx" runat="server">TRABALHE CONOSCO</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink5" Visible="true" NavigateUrl="~/Clientes.aspx" runat="server">Clientes</asp:HyperLink>
 
-            <asp:HyperLink ID="HyperLink3" NavigateUrl="~/FaleConosco.aspx" runat="server">FALE CONOSCO</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" Visible="true" NavigateUrl="~/Cadastro.aspx" runat="server">TRABALHE CONOSCO</asp:HyperLink>
+
+            <asp:HyperLink ID="HyperLink3" Visible="true" NavigateUrl="~/FaleConosco.aspx" runat="server">FALE CONOSCO</asp:HyperLink>
             
             <asp:HyperLink ID="Editar" Visible="false" NavigateUrl="~/adm/CadastroEdt.aspx" runat="server">EDITAR CADASTRO</asp:HyperLink>
            
@@ -45,14 +60,20 @@
             <asp:HyperLink ID="Logout" Visible="false" NavigateUrl="~/Logout.aspx" runat="server">LOGOUT</asp:HyperLink>
          </div>
       </div>
-      <!-- ÃREA DE CONTEUDO-->
+             <br />
+      <!-- ÁREA DE CONTEUDO-->
       <div class="conteudo">
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
          </asp:ContentPlaceHolder>
       </div>
-      <!-- RODAPÃ‰ -->
-      <div class="rodape">
-      </div>
+      
+       <!-- Inicial Footer -->
+      <footer class="footer">
+         <hr />
+           <p>© 2017 Security Company, Inc.</p>
+      </footer>
+        <!-- End Footer -->
+         </div>
    </form>
 </body>
 </html>

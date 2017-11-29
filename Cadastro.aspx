@@ -9,19 +9,20 @@
   <asp:Label ID="msg" BackColor="Red" ForeColor="White" runat="server" />
       <br />
       <label>Nome</label>
-      <asp:TextBox ID="Nome" runat="server" />
+      <asp:TextBox ID="Nome" runat="server" width="50%"  placeholder="Nome Completo" />
       <label>Email</label>
-      <asp:TextBox ID="Email" runat="server" />
+      <asp:TextBox ID="Email" runat="server" width="50%"  placeholder="Email"/>
       <label>Telefone</label>
-      <asp:TextBox ID="Telefone" runat="server" />
-      <label>Resumo</label>
-      <asp:TextBox ID="Resumo" TextMode="MultiLine" Rows="6" runat="server" />
+      <asp:TextBox ID="Telefone" type="number" runat="server" width="50%"  placeholder="Telefone"/>
+      <label>Conteudo</label>
+      <asp:TextBox ID="Resumo" TextMode="MultiLine" Rows="6" runat="server" width="50%"  placeholder="Carta de apresentação" />
       <br />
       <br />
       <asp:Button ID="Enviar" OnClick="Enviar_Click" runat="server" Text="Enviar" />
    </div>
    <div id="MensagemFinal" runat="server" visible="false">
-      <p>Seus dados foram enviados com sucesso.</p>
+       <meta http-equiv="refresh" content="5">
+       <div class="alert alert-success" role="alert">Seus dados foram enviados com sucesso</div>
    </div>
 
 </asp:Content>

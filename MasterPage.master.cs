@@ -14,6 +14,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
             if (Session["NomeUsuario"].ToString() == "jose")
             {
+                HyperLink1.Visible = false;
+                HyperLink2.Visible = false;
+                HyperLink4.Visible = false;
+                HyperLink5.Visible = false;
+                HyperLink3.Visible = false;
                 Editar.Visible = true;
                 EditarProdutos.Visible = true;
                 Login.Visible = false;

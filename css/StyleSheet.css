@@ -12,12 +12,6 @@ h1, h2, h3, h4, h5, h6 {
    src: url('../fonts/open-sans/OpenSans-Light.ttf');
 }
 
-body {
-   margin: 0;
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-   color: #333333;
-   background-color: #dddddd;
-}
 
 .cabecalho {
    height: 90px;
@@ -28,13 +22,6 @@ body {
    position: relative;
 }
 
-   .cabecalho .logomarca {
-      height: 90px;
-      width: 90px;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-   }
 
    .cabecalho .menu {
       height: 20px;
@@ -66,19 +53,6 @@ body {
             background-color: #c0c0c0;
          }
 
-.conteudo {
-   background-color: white;
-   min-height: 1300px;
-   padding-left: 60px;
-   padding-top: 30px;
-}
-
-.rodape {
-   height: 200px;
-   color: #808080;
-   padding: 14px;
-   background-color: transparent;
-}
 
 
 /* CONTROLES DE FORMULÁRIO */
@@ -86,7 +60,7 @@ body {
 label {
    display: block;
    font-size: 11px;
-   text-transform: uppercase;
+   text-transform: uppercase;   
    margin-top: 14px;
    font-weight: 600;
 }

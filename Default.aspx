@@ -26,25 +26,23 @@
          </script>
       </div>
       <!-- TEXTOS -->
-      <div style="margin-top: 50px;">
-         <!-- box flutuante de texto -->
-         <div style="height: 300px; float: left; overflow: hidden; text-align: justify; font-size: 14px; padding: 20px; margin: 20px; border: 1px solid #c0c0c0; width: 260px;">
-            <h2>Cuide da segurança</h2>
-            <p>
-               Lorem ipsum dolor sit amet.<br />
-               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-            </p>
-         </div>
-
-         <div style="\">
-            <h2>Cuide da segurança</h2>
-            <p>
-               Lorem ipsum dolor sit amet.<br />
-               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-            </p>
-         </div>
-
+       <br />
+    <!-- Inicial row -->
+    <div class="row">
+        <div class="col-md-4">
+          <h2><i class="fa fa-briefcase" aria-hidden="true"></i> Empresa</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-coffee" aria-hidden="true"></i> Especialidade</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+       </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-cubes" aria-hidden="true"></i> Serviços</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
       </div>
+    <!-- End Row -->
    </div>
 </asp:Content>
 
