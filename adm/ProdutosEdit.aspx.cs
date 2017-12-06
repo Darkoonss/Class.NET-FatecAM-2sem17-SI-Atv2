@@ -52,6 +52,9 @@ public partial class adm_ProdutosEdit : System.Web.UI.Page
 
         if (tb.Rows.Count == 1)
         {
+            form.Visible = true;
+            footer.Visible = false;
+
             ProdutoId.Text = tb.Rows[0]["ProdutoId"].ToString();
             Nome.Text = tb.Rows[0]["Nome"].ToString();
             Descricao.Text = tb.Rows[0]["Descricao"].ToString();
@@ -86,11 +89,17 @@ public partial class adm_ProdutosEdit : System.Web.UI.Page
         {
             //UPLOAD
             sql = "UPDATE Produtos SET  Nome='" + Nome.Text + "',Descricao='" + Descricao.Text + "',UrlFoto='" + UrlFoto.Value + "',Status=" + Status.SelectedValue + ",DateTimeUpdate=Now() WHERE ProdutoId=" + ProdutoId.Text;
+
+            form.Visible = false;
+            footer.Visible = true;
         }
         else
         {
             // INSERT
             sql = "INSERT INTO Produtos(Nome,Descricao,UrlFoto,Status,DateTimeInsert,DateTimeUpdate) VALUES('" + Nome.Text + "','" + Descricao.Text + "','" + UrlFoto.Value + "'," + Status.SelectedValue + ",Now(),Now());";
+
+            form.Visible = false;
+            footer.Visible = true;
         }
         // CONECTA NO BANCO DE DADOS E EXECUTAO O COMANDO SQL
         ole.ConnectionString = conexao;

@@ -48,6 +48,8 @@ public partial class adm_CadastroEdt : System.Web.UI.Page
 
     protected void Buscar_Click(object sender, EventArgs e)
     {
+        Entrada.Visible = true;
+
         string comando = "SELECT * FROM Cadastro WHERE Registro=" + Registros.SelectedValue;
         AppDatabase.OleDBTransaction ole = new AppDatabase.OleDBTransaction();
         // define a conexão com o database
@@ -78,6 +80,8 @@ public partial class adm_CadastroEdt : System.Web.UI.Page
         {
             Limpar();
             CarregarNomes();
+            Entrada.Visible = false;
+
         }
         else
         {
